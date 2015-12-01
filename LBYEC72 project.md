@@ -147,19 +147,19 @@ int main(){
 	  {
 	    nums++;
 	    printf("\nEnter name: ");
-	    fpurge(stdin);
+	    fflush(stdin);
 	    fgets(dlsu.name[nums-1], 128, stdin);
 	    printf("\nEnter Degree Program: ");
 	    scanf("%s", dlsu.degree[nums-1]);
 	    printf("\nEnter your Secondary level school: ");
 	    scanf("%s", &dlsu.school[nums-1]);
 	    printf("\nEnter your present address: ");
-	    fpurge(stdin);
+	    fflush(stdin);
 	    fgets(dlsu.address[nums-1], 128, stdin);
 	    printf("\nGender: ");
 	    scanf("%s", dlsu.gender[nums-1]);
 	    printf("\nEnter Name of Guardian: ");
-	    fpurge(stdin);
+	    fflush(stdin);
 	    fgets(dlsu.guardian[nums-1], 128, stdin);
 	    printf("\nEnter contact number of Guardian: ");
 	    scanf("%d", &dlsu.contactG[nums-1]);
@@ -220,7 +220,7 @@ int main(){
 
 			    for(a=0; a<nmemb; a++)
 			      {
-				printf("\n%d:\t%f", memb.id[a], memb.grade[a]);
+				printf("\n%d:\t%.1f", memb.id[a], memb.grade[a]);
 			      }
 			  }break;
 
@@ -237,7 +237,7 @@ int main(){
 			      }
 			    for(a=0; a<nmemr; a++)
 			      {
-				printf("\n%d:\t%f", memr.id[a], memr.grade[a]);
+				printf("\n%d:\t%.1f", memr.id[a], memr.grade[a]);
 			      }
 			  }break;
 
@@ -255,7 +255,7 @@ int main(){
 			      }
 			    for(a=0; a<nmema; a++)
 			      {
-				printf("\n%d:\t%f", mema.id[a], mema.grade[a]);
+				printf("\n%d:\t%.1f", mema.id[a], mema.grade[a]);
 			      }
 			  }break;
 
@@ -272,7 +272,7 @@ int main(){
 			      }
 			    for(a=0; a<nmemc; a++)
 			      {
-				printf("\n%d:\t%f", memc.id[a], memc.grade[a]);
+				printf("\n%d:\t%.1f", memc.id[a], memc.grade[a]);
 			      }
 			  }break;
 
@@ -289,7 +289,7 @@ int main(){
 			      }
 			    for(a=0; a<nec71; a++)
 			      {
-				printf("\n%d:\t%f", ec71.id[a], ec71.grade[a]);
+				printf("\n%d:\t%.1f", ec71.id[a], ec71.grade[a]);
 			      }
 			  }break;
 
@@ -306,7 +306,7 @@ int main(){
 			      }
 			    for(a=0; a<nec72; a++)
 			      {
-				printf("\n%d:\t%f", ec72.id[a], ec72.grade[a]);
+				printf("\n%d:\t%.1f", ec72.id[a], ec72.grade[a]);
 			      }
 			  }break;
 
@@ -323,7 +323,7 @@ int main(){
 			      }
 			    for(a=0; a<nec73; a++)
 			      {
-				printf("\n%d:\t%f", ec73.id[a], ec73.grade[a]);
+				printf("\n%d:\t%.1f", ec73.id[a], ec73.grade[a]);
 			      }
 			  }break;
 
@@ -340,7 +340,7 @@ int main(){
 			      }
 			    for(a=0; a<nec74; a++)
 			      {
-				printf("\n%d:\t%f", ec74.id[a], ec74.grade[a]);
+				printf("\n%d:\t%.1f", ec74.id[a], ec74.grade[a]);
 			      }
 			  }break;
 
@@ -357,7 +357,7 @@ int main(){
 			      }
 			    for(a=0; a<nmren; a++)
 			      {
-				printf("\n%d:\t%f", mren.id[a], mren.grade[a]);
+				printf("\n%d:\t%.1f", mren.id[a], mren.grade[a]);
 			      }
 			  }break;
 
@@ -374,7 +374,7 @@ int main(){
 			      }
 			    for(a=0; a<npro1; a++)
 			      {
-				printf("\n%d:\t%f", pro1.id[a], pro1.grade[a]);
+				printf("\n%d:\t%.1f", pro1.id[a], pro1.grade[a]);
 			      }
 			  }break;
 			case 77:
@@ -416,7 +416,7 @@ int main(){
 			    scanf("%f", &memr.grade[found-1]);
 			    for(a=0; a<nmemr; a++)
 			      {
-				printf("\n%d:\t%f", memr.id[a], memr.grade[a]);
+				printf("\n%d:\t%.1f", memr.id[a], memr.grade[a]);
 			      }
 			  }break;
 
@@ -432,7 +432,7 @@ int main(){
 			    scanf("%f", &mema.grade[found-1]);
 			    for(a=0; a<nmema; a++)
 			      {
-				printf("\n%d:\t%f", mema.id[a], mema.grade[a]);
+				printf("\n%d:\t%.1f", mema.id[a], mema.grade[a]);
 			      }
 			  }break;
 
@@ -448,7 +448,7 @@ int main(){
 			    scanf("%f", &memc.grade[found-1]);
 			    for(a=0; a<nmemc; a++)
 			      {
-				printf("\n%d:\t%f", memc.id[a], memc.grade[a]);
+				printf("\n%d:\t%.1f", memc.id[a], memc.grade[a]);
 			      }
 			  }break;
 
@@ -464,7 +464,7 @@ int main(){
 			    scanf("%f", &ec71.grade[found-1]);
 			    for(a=0; a<nec71; a++)
 			      {
-				printf("\n%d:\t%f", ec71.id[a], ec71.grade[a]);
+				printf("\n%d:\t%.1f", ec71.id[a], ec71.grade[a]);
 			      }
 			  }break;
 
@@ -480,7 +480,7 @@ int main(){
 			    scanf("%f", &ec72.grade[found-1]);
 			    for(a=0; a<nec72; a++)
 			      {
-				printf("\n%d:\t%f", ec72.id[a], ec72.grade[a]);
+				printf("\n%d:\t%.1f", ec72.id[a], ec72.grade[a]);
 			      }
 			  }break;
 
@@ -496,7 +496,7 @@ int main(){
 			    scanf("%f", &ec73.grade[found-1]);
 			    for(a=0; a<nec73; a++)
 			      {
-				printf("\n%d:\t%f", ec73.id[a], ec73.grade[a]);
+				printf("\n%d:\t%.1f", ec73.id[a], ec73.grade[a]);
 			      }
 			  }break;
 
@@ -512,7 +512,7 @@ int main(){
 			    scanf("%f", &ec74.grade[found-1]);
 			    for(a=0; a<nec74; a++)
 			      {
-				printf("\n%d:\t%f", ec74.id[a], ec74.grade[a]);
+				printf("\n%d:\t%.1f", ec74.id[a], ec74.grade[a]);
 			      }
 			  }break;
 
@@ -528,7 +528,7 @@ int main(){
 			    scanf("%f", &mren.grade[found-1]);
 			    for(a=0; a<nmren; a++)
 			      {
-				printf("\n%d:\t%f", mren.id[a], mren.grade[a]);
+				printf("\n%d:\t%.1f", mren.id[a], mren.grade[a]);
 			      }
 			  }break;
 
@@ -544,7 +544,7 @@ int main(){
 			    scanf("%f", &pro1.grade[found-1]);
 			    for(a=0; a<npro1; a++)
 			      {
-				printf("\n%d:\t%f", pro1.id[a], pro1.grade[a]);
+				printf("\n%d:\t%.1f", pro1.id[a], pro1.grade[a]);
 			      }
 			  }break;
 			case 77:
@@ -567,7 +567,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", memb.grade[a]);
+			  printf("\n%.1f", memb.grade[a]);
 			}
 			break;
 		      case 2:
@@ -579,7 +579,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", memr.grade[a]);
+			  printf("\n%.1f", memr.grade[a]);
 			}
 			break;
 		      case 3:
@@ -591,7 +591,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", mema.grade[a]);
+			  printf("\n%.1f", mema.grade[a]);
 			}
 			break;
 		      case 4:
@@ -603,7 +603,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", memc.grade[a]);
+			  printf("\n%.1f", memc.grade[a]);
 			}
 			break;
 		      case 5:
@@ -615,7 +615,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", ec71.grade[a]);
+			  printf("\n%.1f", ec71.grade[a]);
 			}
 			break;
 		      case 6:
@@ -627,7 +627,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", ec72.grade[a]);
+			  printf("\n%.1f", ec72.grade[a]);
 			}
 			break;
 		      case 7:
@@ -639,7 +639,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", ec73.grade[a]);
+			  printf("\n%.1f", ec73.grade[a]);
 			}
 			break;
 		      case 8:
@@ -651,7 +651,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", ec74.grade[a]);
+			  printf("\n%.1f", ec74.grade[a]);
 			}
 			break;
 		      case 9:
@@ -663,7 +663,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", mren.grade[a]);
+			  printf("\n%.1f", mren.grade[a]);
 			}
 			break;
 		      case 10:
@@ -675,7 +675,7 @@ int main(){
 			    }
 
 			  }
-			  printf("\n%f", pro1.grade[a]);
+			  printf("\n%.1f", pro1.grade[a]);
 			}
 			break;
 		      case 77:
@@ -722,71 +722,72 @@ int main(){
 		    printf("\nName: %s\nAddress: %s\nDegree: %s\nGender: %s\nSecondary Level: %s\nGuardian: %s\nContact Number: %d", dlsu.name[temp], dlsu.address[temp], dlsu.degree[temp], dlsu.gender[temp], dlsu.school[temp], dlsu.guardian[temp], dlsu.contactG[temp] );
 		    break;
 		  case 2:
+		  	printf("\n If grade is 6.00; your prof has not yet entered a grade");
 		    printf("\n Grades: ");
 
 		    for(a = 0; a<nmemb; a++){
 		      if(memb.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYMEMB\t%f", memb.grade[a]);
+			printf("\nLBYMEMB\t%.1f", memb.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nmemr;a++){
 		      if(memr.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYMEMR\t%f", memr.grade[a]);
+			printf("\nLBYMEMR\t%.1f", memr.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nmema; a++){
 		      if(mema.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYMEMA\t%f", mema.grade[a]);
+			printf("\nLBYMEMA\t%.1f", mema.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nmemc;a++){
 		      if(memc.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYMEMC\t%f", memc.grade[a]);
+			printf("\nLBYMEMC\t%.1f", memc.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nec71; a++){
 		      if(ec71.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYEC71\t%f", ec71.grade[a]);
+			printf("\nLBYEC71\t%.1f", ec71.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nec72;a++){
 		      if(ec72.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYEC72\t%f", ec72.grade[a]);
+			printf("\nLBYEC72\t%.1f", ec72.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nec73; a++){
 		      if(ec73.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYEC73\t%f", ec73.grade[a]);
+			printf("\nLBYEC73\t%.1f", ec73.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nec74;a++){
 		      if(ec74.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYEC74\t%f", ec74.grade[a]);
+			printf("\nLBYEC74\t%.1f", ec74.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<nmren; a++){
 		      if(mren.id[a]==dlsu.studentacct[temp]){
-			printf("\nLBYMREN\t%f", mren.grade[a]);
+			printf("\nLBYMREN\t%.1f", mren.grade[a]);
 		      }
 		    }
 
 		    for(a = 0; a<npro1;a++){
 		      if(pro1.id[a]==dlsu.studentacct[temp]){
-			printf("\nMACPRO1\t%f", pro1.grade[a]);
+			printf("\nMACPRO1\t%.1f", pro1.grade[a]);
 		      }
 		    }
 		    break;
 		  case 3:
 		    printf("\nTuition Fee");
-		    printf("\nYour tuition is %f", dlsu.tuition[temp]);
+		    printf("\nYour tuition is %.2f", dlsu.tuition[temp]);
 		    printf("\n\n");
 		    break;
 		  case 4:
@@ -1038,6 +1039,13 @@ int main(){
 		      switch(course)
 			{
 			case 3651:
+				 for(a = 0, enrolled = 0; a<nmemb; a++){
+			    if(memb.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
+			  
 			  printf("\nYou now dropped LBYMEMB");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-membt;
 			  for(a=membenrolled[temp]; a<nmemb; a++)
@@ -1045,9 +1053,19 @@ int main(){
 			      memb.id[a]=memb.id[a+1];
 			    }
 			  nmemb--;
+		}
+		else{
+			puts("\n You are not Enrolled to MEMB");
+		}
 			  break;
 
 			case 3652:
+				 for(a = 0, enrolled = 0; a<nmemr; a++){
+			    if(memr.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 
 			  printf("\nYou now dropped LBYMEMR");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-memrt;
@@ -1056,9 +1074,19 @@ int main(){
 			      memr.id[a]=memr.id[a+1];
 			    }
 			  nmemr--;
+		}
+		else{
+			puts("\n You are not Enrolled to MEMR");
+		}	  
 			  break;
 
 			case 3653:
+				 for(a = 0, enrolled = 0; a<nmema; a++){
+			    if(mema.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYMEMA");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-memat;
 			  for(a=memaenrolled[temp]; a<nmema; a++)
@@ -1066,9 +1094,19 @@ int main(){
 			      mema.id[a]=mema.id[a+1];
 			    }
 			  nmema--;
+			  }
+		else{
+			puts("\n You are not Enrolled to MEMA");
+		}
 			  break;
 
 			case 3654:
+				 for(a = 0, enrolled = 0; a<nmemc; a++){
+			    if(memc.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYMEMC");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-memct;
 			  for(a=memcenrolled[temp]; a<nmemc; a++)
@@ -1076,9 +1114,19 @@ int main(){
 			      memc.id[a]=memc.id[a+1];
 			    }
 			  nmemc--;
+			  }
+		else{
+			puts("\n You are not Enrolled to MEMC");
+		}
 			  break;
 
 			case 3655:
+				 for(a = 0, enrolled = 0; a<nec71; a++){
+			    if(ec71.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYEC71");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-ec71t;
 			  for(a=ec71enrolled[temp]; a<nec71; a++)
@@ -1086,9 +1134,19 @@ int main(){
 			      ec71.id[a]=ec71.id[a+1];
 			    }
 			  nec71--;
+			  }
+		else{
+			puts("\n You are not Enrolled to EC71");
+		}
 			  break;
 
 			case 3656:
+				 for(a = 0, enrolled = 0; a<nec72; a++){
+			    if(ec72.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYEC72");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-ec72t;
 			  for(a=ec72enrolled[temp]; a<nec72; a++)
@@ -1096,9 +1154,19 @@ int main(){
 			      ec72.id[a]=ec72.id[a+1];
 			    }
 			  nec72--;
+			  }
+		else{
+			puts("\n You are not Enrolled to EC72");
+		}
 			  break;
 
 			case 3657:
+				 for(a = 0, enrolled = 0; a<nec73; a++){
+			    if(ec73.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYEC73");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-ec73t;
 			  for(a=ec73enrolled[temp]; a<nec73; a++)
@@ -1106,9 +1174,19 @@ int main(){
 			      ec73.id[a]=ec73.id[a+1];
 			    }
 			  nec73--;
+			  }
+		else{
+			puts("\n You are not Enrolled to EC73");
+		}
 			  break;
 
 			case 3658:
+				 for(a = 0, enrolled = 0; a<nec74; a++){
+			    if(ec74.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYEC74");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-ec74t;
 			  for(a=ec74enrolled[temp]; a<nec74; a++)
@@ -1116,9 +1194,19 @@ int main(){
 			      ec74.id[a]=ec74.id[a+1];
 			    }
 			  nec74--;
+			  }
+		else{
+			puts("\n You are not Enrolled to EC74");
+		}
 			  break;
 
 			case 3659:
+				 for(a = 0, enrolled = 0; a<nmren; a++){
+			    if(mren.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped LBYMREN");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-mrent;
 			  for(a=mrenenrolled[temp]; a<nmren; a++)
@@ -1126,9 +1214,19 @@ int main(){
 			      mren.id[a]=mren.id[a+1];
 			    }
 			  nmren--;
+			  }
+		else{
+			puts("\n You are not Enrolled to MREN");
+		}
 			  break;
 
 			case 3660:
+				 for(a = 0, enrolled = 0; a<npro1; a++){
+			    if(pro1.id[a]==dlsu.studentacct[temp]){
+			      enrolled = 1;
+			    }
+			  }
+			  if(enrolled==1){
 			  printf("\nYou now dropped MACPRO1");
 			  dlsu.tuition[temp]=dlsu.tuition[temp]-pro1t;
 			  for(a=pro1enrolled[temp]; a<npro1; a++)
@@ -1136,6 +1234,10 @@ int main(){
 			      pro1.id[a]=pro1.id[a+1];
 			    }
 			  npro1--;
+			  }
+		else{
+			puts("\n You are not Enrolled to MACPRO1");
+		}
 			  break;
 
 			case 77:
